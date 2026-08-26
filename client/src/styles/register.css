@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.register-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#eef4ff;
+    padding:40px;
+}
+
+.register-container{
+    width:1100px;
+    background:#fff;
+    border-radius:25px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+}
+
+.register-left{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.register-left h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.register-left p{
+    font-size:18px;
+    line-height:1.8;
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.register-left img{
+    width:300px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.register-right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+
+.register-right form{
+    width:100%;
+    max-width:420px;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.register-right h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#0f172a;
+    font-size:34px;
+}
+
+.input-box{
+    display:flex;
+    align-items:center;
+    border:2px solid #e2e8f0;
+    border-radius:12px;
+    background:#f8fafc;
+    margin-bottom:22px;
+    padding:0 15px;
+    transition:.3s;
+}
+
+.input-box:focus-within{
+    border-color:#2563eb;
+    background:#fff;
+    box-shadow:0 0 15px rgba(37,99,235,.2);
+}
+
+.icon{
+    color:#64748b;
+    font-size:18px;
+}
+
+.input-box input{
+    width:100%;
+    border:none;
+    background:transparent;
+    padding:16px;
+    font-size:16px;
+    outline:none;
+}
+
+.register-right button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.register-right button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(37,99,235,.35);
+}
+
+.register-right p{
+    margin-top:25px;
+    text-align:center;
+    color:#475569;
+}
+
+.register-right a{
+    color:#2563eb;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.register-right a:hover{
+    text-decoration:underline;
+}
+
+@media(max-width:900px){
+
+.register-container{
+    grid-template-columns:1fr;
+}
+
+.register-left{
+    display:none;
+}
+
+.register-right{
+    padding:25px;
+}
+
+.register-right form{
+    box-shadow:none;
+    padding:10px;
+}
+
+}
