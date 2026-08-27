@@ -1,3 +1,7 @@
+const dns = require("dns");
+
+dns.setServers(["8.8.8.8"]);
+
 const express = require("express");
 const userRoutes = require("./routes/userRoutes");
 const productRoutes = require("./routes/productRoutes");
@@ -25,12 +29,13 @@ app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
 app.use("/api/orders", orderRoutes);
+
 // Home Route
 app.get("/", (req, res) => {
     res.send("Welcome to ShopEZ Backend");
 });
 
-// ✅ Protected Profile Route
+// Profile Route
 app.get("/api/profile", protect, (req, res) => {
     res.json({
         success: true,
@@ -39,6 +44,7 @@ app.get("/api/profile", protect, (req, res) => {
     });
 });
 
+// Admin Route
 app.get("/api/admin", protect, admin, (req, res) => {
     res.json({
         success: true,
