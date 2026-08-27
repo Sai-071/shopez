@@ -11,8 +11,8 @@ const {
 
 } = require("../controllers/productcontroller");
 
-const { protect } = require("../middleware/authMiddleware");
-const { admin } = require("../middleware/adminMiddleware");
+const { protect } = require("../middleware/authmiddleware");
+const { admin } = require("../middleware/adminmiddleware");
 
 // ==========================
 // Public Routes

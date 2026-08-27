@@ -9,8 +9,8 @@ const {
     updateOrderStatus,
 } = require("../controllers/orderController");
 
-const { protect } = require("../middleware/authMiddleware");
-const { admin } = require("../middleware/adminMiddleware");
+const { protect } = require("../middleware/authmiddleware");
+const { admin } = require("../middleware/adminmiddleware");
 
 // ==========================
 // User Routes

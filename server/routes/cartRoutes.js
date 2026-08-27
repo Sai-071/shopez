@@ -9,7 +9,7 @@ const {
     removeFromCart,
 } = require("../controllers/cartController");
 
-const { protect } = require("../middleware/authMiddleware");
+const { protect } = require("../middleware/authmiddleware");
 
 // ==========================
 // Cart Routes
