@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import API from "../services/api";
-import "../styles/Login.css";
+import "../styles/login.css";
 
 function Login() {
   const navigate = useNavigate();

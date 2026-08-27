@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import API from "../services/api";
-import "../styles/Register.css";
+import "../styles/register.css";
 
 function Register() {
   const navigate = useNavigate();
