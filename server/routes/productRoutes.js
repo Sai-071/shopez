@@ -9,7 +9,7 @@ const {
     updateProduct,
      deleteProduct,
 
-} = require("../controllers/productController");
+} = require("../controllers/productcontroller");
 
 const { protect } = require("../middleware/authMiddleware");
 const { admin } = require("../middleware/adminMiddleware");
