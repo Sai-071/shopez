@@ -10,8 +10,8 @@ const orderRoutes = require("./routes/orderRoutes");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
-const { protect } = require("./middleware/authMiddleware");
-const { admin } = require("./middleware/adminMiddleware");
+const { protect } = require("./middleware/authmiddleware");
+const { admin } = require("./middleware/adminmiddleware");
 
 dotenv.config();
 
